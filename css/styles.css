@@ -1,0 +1,11 @@
+li {
+    list-style: none;
+}
+
+.delete {
+    display: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
