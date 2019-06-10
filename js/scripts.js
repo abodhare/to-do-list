@@ -32,7 +32,10 @@ function createListItem() {
     });
 
     let dbtn = document.createElement("button");
-    dbtn.appendChild(document.createTextNode("X"));
+    let icon = document.createElement("i");
+    icon.classList.add("far");
+    icon.classList.add("fa-minus-square");
+    dbtn.appendChild(icon);
     dbtn.addEventListener("click", ()=>{li.classList.add("delete")});
     li.appendChild(dbtn);
 }

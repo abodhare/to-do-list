@@ -6,15 +6,24 @@
     <title>To do List</title>
     <meta name="description" content="A site to create to-do lists">
     <meta name="author" content="Akshay Bodhare">
+    <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
+    <script src="https://kit.fontawesome.com/bd4de688bf.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div>
-        <input type="text" placeholder="New item..." id="user-input"><button id="enter">Enter</button>
+    <div class="container">
+        <h1>To-do List</h1>
+        <h3>Track your tasks so you can concentrate on doing</h3>
+        <p>Add items by clicking on enter. Delete items by clicking on '-'. Mark as done by clicking on item</p>
+        <div class="list">
+            <div class="input-items">
+                <input type="text" placeholder="New item..." id="user-input"><button id="enter"><i class="fas fa-pencil-alt"></i></button>
+            </div>
+            <ul id="items"></ul>
+            <ul id="done"></ul>
+        </div>
     </div>
-    <ul id="items"></ul>
-    <ul id="done"></ul>
     <script src="js/scripts.js"></script>
 </body>
 </html>
